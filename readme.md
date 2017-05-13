@@ -1,7 +1,7 @@
 
 # pull-imux
 
-> Transforim stream composed of smaller duplex streams
+> Transform stream composed of smaller duplex streams
 
 An inverse MUX stream.  Returns a transform that is composed of channels (duplex streams)
 
