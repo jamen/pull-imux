@@ -9,16 +9,11 @@ function imux (streams) {
   var [sink, sources, rest] = splitter(streams)
   var { push, end, source: main } = pushable(true)
   var channels = {}
-  var count = 0
 
   for (var name in sources) {
-    count++
     channels[name] = {
       source: sources[name],
-      sink: drain(push, err => {
-        count++
-        if (err || count) return end(err)
-      })
+      sink: drain(push, end)
     }
   }
 
