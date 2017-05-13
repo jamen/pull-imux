@@ -1,7 +1,7 @@
 {
   "name": "pull-imux",
   "description": "Transform stream composed of smaller duplex streams",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "author": "Jamen Marz (https://git.io/jamen)",
   "main": "index.js",
   "repository": "jamen/pull-imux",
