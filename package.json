@@ -1,7 +1,7 @@
 {
   "name": "pull-imux",
   "description": "Inverse mutiplexer for pull-stream",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Jamen Marz (https://git.io/jamen)",
   "main": "index.js",
   "repository": "jamen/pull-imux",
