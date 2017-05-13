@@ -1,12 +1,12 @@
 
 # pull-imux
 
-> Inverse mutiplexer for pull-stream
+> Transforim stream composed of smaller duplex streams
 
-An ["inverse multiplexer" or "IMUX"] for [`pull-stream`]:
+An inverse MUX stream.  Returns a transform that is composed of channels (duplex streams)
 
 ```js
-var [minify, channels, rest] = imux({
+var [minify, channels] = imux({
   js: file => extname(file.path) === '.js',
   css: file => extname(file.path) === '.css'
 })
@@ -44,7 +44,7 @@ Create a `transform` and `channels` stream, also `rest` where unknown data strea
 `channels` corrosponds with each field from `config` to let you "route" your data into different duplexes:
 
 ```js
-var [transform, channels] = imux({
+var [transform, channels, rest] = imux({
   high: n => n >= 50,
   low:  n => n < 50
 })
