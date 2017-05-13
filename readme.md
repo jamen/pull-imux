@@ -3,7 +3,7 @@
 
 > Inverse mutiplexer for pull-stream
 
-An ["inverse multiplexer" or "IMUX"][imux] for [pull-stream][pull-stream]:
+An ["inverse multiplexer" or "IMUX"] for [`pull-stream`]:
 
 ```js
 var [minify, channels, rest] = imux({
@@ -23,7 +23,7 @@ pull(
 )
 ```
 
-[`pull-pair`][pull-pair] is to `pull-pair/duplex` as [`pull-splitter`][pull-splitter] is to `pull-imux`
+[`pull-pair`] is to `pull-pair/duplex` as [`pull-splitter`] is to `pull-imux`
 
 ## Install
 
@@ -71,13 +71,17 @@ pull(
 
 ## Also see
 
- - [`pull-mux`](https://github.com/nichoth/pull-mux) combine and namespace multiple streams
- - [`pull-splitter`](https://github.com/jamen/pull-splitter) split streams into other streams using filters
- - [`pull-pair/duplex`](https://github.com/pull-stream/pull-pair) for creating transform streams 
+ - [`pull-mux`] combine and namespace multiple streams
+ - [`pull-splitter`] split streams into other streams using filters
+ - [`pull-pair`] for creating linked streams
 
 ---
 
 Maintained by [Jamen Marz](https://git.io/jamen) (See on [Twitter](https://twitter.com/jamenmarz) and [GitHub](https://github.com/jamen) for questions & updates)
 
-[imux]: https://en.wikipedia.org/wiki/Multiplexing
-[pull-stream]: https://github.com/pull-stream/pull-stream
+["inverse multiplexer" or "IMUX"]: https://en.wikipedia.org/wiki/Inverse_multiplexer
+[`pull-stream`]: https://github.com/pull-stream/pull-stream
+[`pull-pair`]: https://github.com/oull-stream/pull-pair
+[`pull-splitter`]: https://github.com/jamen/pull-splitter
+[`pull-mux`]: https://github.com/nichoth/pull-mux
+
