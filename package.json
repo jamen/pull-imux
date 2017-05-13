@@ -1,7 +1,7 @@
 {
   "name": "pull-imux",
   "description": "Inverse mutiplexer for pull-stream",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Jamen Marz (https://git.io/jamen)",
   "main": "index.js",
   "repository": "jamen/pull-imux",
@@ -14,9 +14,9 @@
   ],
   "devDependencies": {
     "pull-files": "^1.1.0",
-    "tape": "^4.6.3",
     "pull-minify-css": "^0.3.0",
-    "pull-minify-js": "^0.8.0"
+    "pull-minify-js": "^0.8.0",
+    "tape": "^4.6.3"
   },
   "dependencies": {
     "pull-pushable": "^2.1.0",
