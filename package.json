@@ -14,12 +14,11 @@
   ],
   "devDependencies": {
     "pull-files": "^1.1.0",
-    "tape": "^4.6.3"
+    "tape": "^4.6.3",
+    "pull-minify-css": "^0.3.0",
+    "pull-minify-js": "^0.8.0"
   },
   "dependencies": {
-    "pull-merge": "^1.0.3",
-    "pull-minify-css": "^0.3.0",
-    "pull-minify-js": "^0.8.0",
     "pull-pushable": "^2.1.0",
     "pull-splitter": "^1.0.0",
     "pull-stream": "^3.6.0"

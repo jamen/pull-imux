@@ -81,7 +81,7 @@ Maintained by [Jamen Marz](https://git.io/jamen) (See on [Twitter](https://twitt
 
 ["inverse multiplexer" or "IMUX"]: https://en.wikipedia.org/wiki/Inverse_multiplexer
 [`pull-stream`]: https://github.com/pull-stream/pull-stream
-[`pull-pair`]: https://github.com/oull-stream/pull-pair
+[`pull-pair`]: https://github.com/pull-stream/pull-pair
 [`pull-splitter`]: https://github.com/jamen/pull-splitter
 [`pull-mux`]: https://github.com/nichoth/pull-mux
 
