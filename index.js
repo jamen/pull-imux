@@ -6,14 +6,23 @@ var pushable = require('pull-pushable')
 module.exports = imux
 
 function imux (streams) {
-  var [sink, sources, rest] = splitter(streams)
-  var { push, end, source: main } = pushable(true)
+  var input = splitter(streams)
+  var transform = input[0]
+  var sources = input[1]
+  var rest = input[2]
+  var p = pushable(true)
   var channels = {}
+  var pending = 0
 
   for (var name in sources) {
+    pending++
     channels[name] = {
       source: sources[name],
-      sink: drain(push, end)
+      sink: drain(p.push, function (err) {
+        if (err || !--pending) {
+          return p.end(err) 
+        }
+      })
     }
   }
 
@@ -21,7 +30,7 @@ function imux (streams) {
     // Pass read to splitter sink
     sink(read)
     // Return the merged responses
-    return main
+    return p.source
   }
 
   return [transform, channels, rest]
